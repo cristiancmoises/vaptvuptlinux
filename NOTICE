@@ -1,0 +1,28 @@
+VaptVupt Linux development tools
+Copyright 2026 Cristian Cezar Moisés
+
+This package's first-party tools and documentation are licensed under
+the Apache License, Version 2.0. See LICENSE.
+
+No codec implementation or Linux kernel source is bundled. Userspace
+conformance builds compile a separately obtained canonical VaptVupt Codec
+checkout. Its first-party files currently use Apache-2.0; its XXH64 source
+uses BSD-2-Clause. Retain the external checkout's LICENSE and NOTICE when
+redistributing linked binaries. This package grants no additional rights
+in that checkout, xxHash, or Linux, and grants no kernel implementation
+license.
+
+Optional statically linked userspace conformance binaries built with musl
+include musl libc 1.2.6, primarily under the MIT/Expat license with the
+additional permissive notices preserved in LICENSES/musl.txt. The source
+package itself does not bundle libc implementation code. Redistributors
+must include this COPYRIGHT text and the external codec's LICENSE/NOTICE
+with those binaries. No static glibc build is provided.
+
+The observed musl-gcc build also links GCC 14.3.0 startup objects
+crtbeginS.o and crtendS.o. Covered GCC runtime files use GPL-3.0-or-later
+with the GCC Runtime Library Exception 3.1; the corresponding verbatim
+texts are preserved in LICENSES/GPL-3.0.txt and
+LICENSES/GCC-exception-3.1.txt. This compiler-runtime notice does not
+relicense the independent Apache-2.0 tooling or codec. The link map for
+the observed build selects no libgcc.a/libgcc_eh.a archive members.

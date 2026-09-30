@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "package_version": "0.1.0-dev.1",
+  "tooling_license": "Apache-2.0",
+  "copyright": "2026 Cristian Cezar Moisés",
+  "codec": {
+    "required_version": "2.65.13",
+    "source": "external canonical vaptvupt-codec checkout; not bundled",
+    "first_party_license": "Apache-2.0",
+    "xxhash_license": "BSD-2-Clause",
+    "commit": "e30dc9329be7cf9f233b1ac0b1fc9ed31f530391"
+  },
+  "kernel_implementation_grant": null,
+  "kernel_backend": null,
+  "observed_upstream_reference": {
+    "source": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git",
+    "ref": "refs/heads/master",
+    "commit": "551c722f40809618230001baccf219193e22fc5a",
+    "observed_date": "2026-09-30",
+    "purpose": "licensing documentation reference only; not an integration base or build",
+    "documentation": "Documentation/process/license-rules.rst"
+  },
+  "original_snapshot": {
+    "observed_date": "2026-09-30",
+    "identity": "local vaptvupt-linux non-Git snapshot",
+    "claimed_kernel_version": "7.2.7",
+    "embedded_codec_version": "2.65.11",
+    "embedded_codec_declared_license": "GPL-3.0-or-later",
+    "upstream_commit": null,
+    "imported": false,
+    "sha256": {
+      "Makefile": "870ce5a6f20a17fa5df666a7021bac05fedf6804f51e336ae2218760e45f2874",
+      "mm/vaptvupt/vaptvupt.c": "08e5cd53c28df2537a1c5d50d87d13ac9eb02287b93bf34db9dbcc6cc81aa6bf",
+      "mm/vaptvupt/vaptvupt.h": "88d8f1eef340056477795877295c8a4d628c213369af57fee93a9a6d54b95dca",
+      "mm/vaptvupt/vaptvupt_linux.c": "61b11483f97a947859420276471e2bfb87d5cd95c3cdb118b696be31eeae9065"
+    }
+  }
+}
